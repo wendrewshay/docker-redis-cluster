@@ -1,0 +1,62 @@
+version: '3'
+
+services:
+    redis-7001:
+        build: ./redis/7001
+        network_mode: host
+        restart: always
+        volumes:
+          - ./redis/7001/data:/data
+        ports:
+          - '7001:7001'
+          - '17001:17001'
+
+    redis-7002:
+        build: ./redis/7002
+        network_mode: host
+        restart: always
+        volumes:
+          - ./redis/7002/data:/data
+        ports:
+          - '7002:7002'
+          - '17002:17002'
+
+    redis-7003:
+        build: ./redis/7003
+        network_mode: host
+        restart: always
+        volumes:
+          - ./redis/7003/data:/data
+        ports:
+          - '7003:7003'
+          - '17003:17003'
+
+    redis-7004:
+        build: ./redis/7004
+        network_mode: host
+        restart: always
+        volumes:
+          - ./redis/7004/data:/data
+        ports:
+          - '7004:7004'
+          - '17004:17004'
+
+    redis-7005:
+        build: ./redis/7005
+        network_mode: host
+        restart: always
+        volumes:
+          - ./redis/7005/data:/data
+        ports:
+          - '7005:7005'
+          - '17005:17005'
+
+    redis-7006:
+        build: ./redis/7006
+        network_mode: host
+        restart: always
+        volumes:
+          - ./redis/7006/data:/data
+        ports:
+          - '7006:7006'
+          - '17006:17006'
